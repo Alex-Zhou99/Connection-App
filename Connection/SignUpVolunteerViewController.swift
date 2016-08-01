@@ -60,7 +60,7 @@ class SignUpVolunteerViewController: UIViewController {
                     
                     let userData = ["provider":  "email"]
                     
-                    DataService.dataService.createNewAccount(user!.uid, user: userData)
+                    DataService.dataService.createNewAccount2(user!.uid, user: userData)
                     
                     
                     // Enter the app.
