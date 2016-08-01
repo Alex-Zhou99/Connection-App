@@ -9,7 +9,7 @@
         <!--Login View-->
         <scene sceneID="XJh-Kv-T8b">
             <objects>
-                <viewController storyboardIdentifier="LogInVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FV8-Uc-Gmi" customClass="LoginView" customModule="exmaple" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogInVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FV8-Uc-Gmi" customClass="LoginView" customModule="Connection" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="V5I-OY-fhD"/>
                         <viewControllerLayoutGuide type="bottom" id="pCr-2K-HXS"/>
@@ -108,7 +108,7 @@
         <!--My Hosting Students-->
         <scene sceneID="gNl-wb-Odj">
             <objects>
-                <viewController storyboardIdentifier="MyHostingStudents" id="f5k-MP-1rK" customClass="ConnectionViewController" customModule="exmaple" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyHostingStudents" id="f5k-MP-1rK" customClass="ConnectionViewController" customModule="Connection" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Dlg-46-qMC"/>
                         <viewControllerLayoutGuide type="bottom" id="qN1-Ef-j6a"/>
@@ -134,7 +134,7 @@
                                 <rect key="frame" x="0.0" y="132" width="414" height="566"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ConnectionCellTableViewCell" rowHeight="189" id="kLJ-gE-W1H" customClass="ConnectionCellTableViewCell" customModule="exmaple" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ConnectionCellTableViewCell" rowHeight="189" id="kLJ-gE-W1H" customClass="ConnectionCellTableViewCell" customModule="Connection" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="189"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kLJ-gE-W1H" id="RSO-fA-vIm">
@@ -223,7 +223,7 @@ please click "Add" button on the top right to add students!</string>
         <!--FeedVC View Controller-->
         <scene sceneID="pYQ-jn-DQX">
             <objects>
-                <viewController id="HJm-NE-bb9" customClass="FeedVCViewController" customModule="exmaple" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HJm-NE-bb9" customClass="FeedVCViewController" customModule="Connection" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qkh-MP-75K"/>
                         <viewControllerLayoutGuide type="bottom" id="974-ej-EM7"/>
@@ -236,7 +236,7 @@ please click "Add" button on the top right to add students!</string>
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StudentCellTableViewCell" rowHeight="186" id="Knu-eK-mDs" customClass="StudentCellTableViewCell" customModule="exmaple" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StudentCellTableViewCell" rowHeight="186" id="Knu-eK-mDs" customClass="StudentCellTableViewCell" customModule="Connection" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="414" height="186"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Knu-eK-mDs" id="mMc-sA-hLq">
@@ -249,7 +249,7 @@ please click "Add" button on the top right to add students!</string>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="148" id="MAH-xs-T2P"/>
                                                     </constraints>
-                                                    <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
@@ -301,7 +301,7 @@ please click "Add" button on the top right to add students!</string>
         <!--Sign Up View-->
         <scene sceneID="Yq4-bY-6gd">
             <objects>
-                <viewController storyboardIdentifier="Signup" id="4MT-XM-VDi" customClass="SignUpView" customModule="exmaple" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Signup" id="4MT-XM-VDi" customClass="SignUpView" customModule="Connection" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GOD-z6-6xS"/>
                         <viewControllerLayoutGuide type="bottom" id="9Tj-HH-VdN"/>

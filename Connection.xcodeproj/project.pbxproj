@@ -11,6 +11,7 @@
 		2B149E2F1D303EAB00256862 /* ConnectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B149E2E1D303EAB00256862 /* ConnectionTests.swift */; };
 		2B149E3A1D303EAB00256862 /* ConnectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B149E391D303EAB00256862 /* ConnectionUITests.swift */; };
 		2B149E4C1D3040CF00256862 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B149E4B1D3040CF00256862 /* GoogleService-Info.plist */; };
+		2B2E688B1D3C9F300040DAEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B2E688A1D3C9F300040DAEA /* Assets.xcassets */; };
 		2BCF11921D3C705E00BCFE22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF11911D3C705E00BCFE22 /* AppDelegate.swift */; };
 		2BCF11941D3C706500BCFE22 /* ConnectionCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF11931D3C706500BCFE22 /* ConnectionCellTableViewCell.swift */; };
 		2BCF11961D3C706B00BCFE22 /* ConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF11951D3C706B00BCFE22 /* ConnectionViewController.swift */; };
@@ -22,7 +23,6 @@
 		2BCF11A21D3C708F00BCFE22 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF11A11D3C708F00BCFE22 /* SignUpView.swift */; };
 		2BCF11A41D3C709700BCFE22 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF11A31D3C709700BCFE22 /* Student.swift */; };
 		2BCF11A61D3C709C00BCFE22 /* StudentCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF11A51D3C709C00BCFE22 /* StudentCellTableViewCell.swift */; };
-		2BCF11A81D3C70AD00BCFE22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BCF11A71D3C70AD00BCFE22 /* Assets.xcassets */; };
 		6DFF191F901290ACD498C981 /* Pods_ConnectionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74A5D4D4C52A18CA8F27E90A /* Pods_ConnectionTests.framework */; };
 		F93C71591CF6E8DED1D7771B /* Pods_Connection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B5BBBAA1FDA22E29FCD272 /* Pods_Connection.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +56,7 @@
 		2B149E391D303EAB00256862 /* ConnectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionUITests.swift; sourceTree = "<group>"; };
 		2B149E3B1D303EAB00256862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B149E4B1D3040CF00256862 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2B2E688A1D3C9F300040DAEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BCF11911D3C705E00BCFE22 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BCF11931D3C706500BCFE22 /* ConnectionCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionCellTableViewCell.swift; sourceTree = "<group>"; };
 		2BCF11951D3C706B00BCFE22 /* ConnectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionViewController.swift; sourceTree = "<group>"; };
@@ -67,7 +68,6 @@
 		2BCF11A11D3C708F00BCFE22 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		2BCF11A31D3C709700BCFE22 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		2BCF11A51D3C709C00BCFE22 /* StudentCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentCellTableViewCell.swift; sourceTree = "<group>"; };
-		2BCF11A71D3C70AD00BCFE22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F294BD2799D23ABABC082A7 /* Pods-Connection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Connection.release.xcconfig"; path = "Pods/Target Support Files/Pods-Connection/Pods-Connection.release.xcconfig"; sourceTree = "<group>"; };
 		31E4B81CFB3C0A0E3E5F1E33 /* Pods_ConnectionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConnectionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		377BACA2A56A74C942B8E228 /* Pods-ConnectionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ConnectionTests/Pods-ConnectionTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,9 +153,9 @@
 				2BCF119F1D3C708800BCFE22 /* Main.storyboard */,
 				2BCF11A11D3C708F00BCFE22 /* SignUpView.swift */,
 				2BCF11A31D3C709700BCFE22 /* Student.swift */,
+				2B2E688A1D3C9F300040DAEA /* Assets.xcassets */,
 				2BCF11A51D3C709C00BCFE22 /* StudentCellTableViewCell.swift */,
 				2B149E4B1D3040CF00256862 /* GoogleService-Info.plist */,
-				2BCF11A71D3C70AD00BCFE22 /* Assets.xcassets */,
 				2B149E251D303EAB00256862 /* Info.plist */,
 			);
 			path = Connection;
@@ -303,7 +303,7 @@
 			files = (
 				2BCF119C1D3C707B00BCFE22 /* LaunchScreen.storyboard in Resources */,
 				2B149E4C1D3040CF00256862 /* GoogleService-Info.plist in Resources */,
-				2BCF11A81D3C70AD00BCFE22 /* Assets.xcassets in Resources */,
+				2B2E688B1D3C9F300040DAEA /* Assets.xcassets in Resources */,
 				2BCF11A01D3C708800BCFE22 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -585,10 +585,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Lianjia Shi (M5M9EFGLLB)";
 				INFOPLIST_FILE = Connection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.edward.connection.Connection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "17e34a6b-9f14-46b4-b4bc-dddc7e0076fc";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -599,10 +601,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Lianjia Shi (M5M9EFGLLB)";
 				INFOPLIST_FILE = Connection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.edward.connection.Connection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "17e34a6b-9f14-46b4-b4bc-dddc7e0076fc";
 			};
 			name = Release;
 		};
