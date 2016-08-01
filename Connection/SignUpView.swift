@@ -23,13 +23,16 @@ class SignUpView: UIViewController {
         
     }
     
+    @IBAction func backToSelect(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     @IBAction func CancelDidTapped(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+        //返回指定页面！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
     }
     
     @IBAction func SignUpDidTapped(sender: AnyObject) {

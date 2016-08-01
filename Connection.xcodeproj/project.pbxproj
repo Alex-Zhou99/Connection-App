@@ -12,6 +12,8 @@
 		2B149E3A1D303EAB00256862 /* ConnectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B149E391D303EAB00256862 /* ConnectionUITests.swift */; };
 		2B149E4C1D3040CF00256862 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B149E4B1D3040CF00256862 /* GoogleService-Info.plist */; };
 		2B2E688B1D3C9F300040DAEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B2E688A1D3C9F300040DAEA /* Assets.xcassets */; };
+		2B2F76691D4FE1730032F67E /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2F76681D4FE1730032F67E /* StatusViewController.swift */; };
+		2B41D5881D4FD86C00C29D46 /* SelectStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B41D5871D4FD86C00C29D46 /* SelectStatusViewController.swift */; };
 		2BCF11921D3C705E00BCFE22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF11911D3C705E00BCFE22 /* AppDelegate.swift */; };
 		2BCF11941D3C706500BCFE22 /* ConnectionCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF11931D3C706500BCFE22 /* ConnectionCellTableViewCell.swift */; };
 		2BCF11961D3C706B00BCFE22 /* ConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF11951D3C706B00BCFE22 /* ConnectionViewController.swift */; };
@@ -57,6 +59,8 @@
 		2B149E3B1D303EAB00256862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B149E4B1D3040CF00256862 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2B2E688A1D3C9F300040DAEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B2F76681D4FE1730032F67E /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		2B41D5871D4FD86C00C29D46 /* SelectStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectStatusViewController.swift; sourceTree = "<group>"; };
 		2BCF11911D3C705E00BCFE22 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BCF11931D3C706500BCFE22 /* ConnectionCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionCellTableViewCell.swift; sourceTree = "<group>"; };
 		2BCF11951D3C706B00BCFE22 /* ConnectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +161,8 @@
 				2BCF11A51D3C709C00BCFE22 /* StudentCellTableViewCell.swift */,
 				2B149E4B1D3040CF00256862 /* GoogleService-Info.plist */,
 				2B149E251D303EAB00256862 /* Info.plist */,
+				2B41D5871D4FD86C00C29D46 /* SelectStatusViewController.swift */,
+				2B2F76681D4FE1730032F67E /* StatusViewController.swift */,
 			);
 			path = Connection;
 			sourceTree = "<group>";
@@ -454,12 +460,14 @@
 			files = (
 				2BCF119E1D3C707F00BCFE22 /* LoginView.swift in Sources */,
 				2BCF119A1D3C707600BCFE22 /* FeedVCViewController.swift in Sources */,
+				2B41D5881D4FD86C00C29D46 /* SelectStatusViewController.swift in Sources */,
 				2BCF11921D3C705E00BCFE22 /* AppDelegate.swift in Sources */,
 				2BCF11A61D3C709C00BCFE22 /* StudentCellTableViewCell.swift in Sources */,
 				2BCF11A21D3C708F00BCFE22 /* SignUpView.swift in Sources */,
 				2BCF11941D3C706500BCFE22 /* ConnectionCellTableViewCell.swift in Sources */,
 				2BCF11961D3C706B00BCFE22 /* ConnectionViewController.swift in Sources */,
 				2BCF11981D3C707000BCFE22 /* DataService.swift in Sources */,
+				2B2F76691D4FE1730032F67E /* StatusViewController.swift in Sources */,
 				2BCF11A41D3C709700BCFE22 /* Student.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
