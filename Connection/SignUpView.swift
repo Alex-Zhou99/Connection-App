@@ -57,11 +57,9 @@ class SignUpView: UIViewController {
                     // Create and Login the New User with authUser
                     
                     NSUserDefaults.standardUserDefaults().setValue(user!.uid, forKey: "uid")
-                    
-                    let userData = ["provider":  "email"]
-                    
-                    DataService.dataService.createNewAccount(user!.uid, user: userData)
-                    
+
+                    DataService.dataService.CURRENT_USER_REF.setValue(["username": username, "email": email, "password": password])
+
                     
                     // Enter the app.
                     self.performSegueWithIdentifier("loggedIn", sender: nil)

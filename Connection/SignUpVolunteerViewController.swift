@@ -57,10 +57,7 @@ class SignUpVolunteerViewController: UIViewController {
                     // Create and Login the New User with authUser
                     
                     NSUserDefaults.standardUserDefaults().setValue(user!.uid, forKey: "uid")
-                    
-                    let userData = ["provider":  "email"]
-                    
-                    DataService.dataService.createNewAccount2(user!.uid, user: userData)
+                    DataService.dataService.CURRENT2_USER_REF.setValue(["username": username, "email": email, "password": password])
                     
                     
                     // Enter the app.
