@@ -22,58 +22,43 @@ class StudentCellTableViewCell: UITableViewCell {
     
     func configureCell(student: Student) {
         self.student = student
-        
-        // Set the labels and textView.
-        
-        self.studentDescription.text = student.studentDescription
+        if(student.host == "hosttrue"){
+            self.studentDescription.text = student.studentDescription
+            self.thumbVoteImage.hidden  = false
+            studentRef = DataService.dataService.CURRENT_USER_REF.child("student").child(student.studentKey)
 
-        
-        // Set "votes" as a child of the current user in Firebase and save the joke's key in votes as a boolean.
-        
-        studentRef = DataService.dataService.CURRENT_USER_REF.child("student").child(student.studentKey)
-        
-        // observeSingleEventOfType() listens for the thumb to be tapped, by any user, on any device.
-        
-        studentRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
-            
-            // Set the thumb image.
-            
-            if (snapshot.value as? NSNull) != nil {
-
-                self.thumbVoteImage.image = UIImage(named: "add-button-blue-hi")
-                
-            } else {
-                
-                // Current user voted for the joke!
-                
-                self.thumbVoteImage.image = UIImage(named: "add-button-blue-hi")
-            }
-        })
+            studentRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
+                if(self.student.host == "hosttrue"){
+                    
+                    self.thumbVoteImage.image = UIImage(named: "add-button-blue-hi")
+                }else{
+                    
+                }
+            })
+            }else{
+                self.studentDescription.text = "the student has done"
+                self.thumbVoteImage.hidden  = true
+        }
     }
-
     func voteTapped(sender: UITapGestureRecognizer) {
-        
-        // observeSingleEventOfType listens for a tap by the current user.
-        
+        // observeSingleEventOfType listens for a tap by the current user
         studentRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
-            
             if (snapshot.value as? NSNull) != nil {
-                
-                self.thumbVoteImage.image = UIImage(named: "add-button-blue-hi")
-                self.studentRef.child("description").setValue(self.student?.studentDescription)
-//                self.studentRef.setValue(self.student?.studentDescription)
-                self.student.addSubtractVote(true)
-                
-                
+                if(self.student.host == "hosttrue"){
+                    self.thumbVoteImage.hidden = false
+                    self.thumbVoteImage.image = UIImage(named: "add-button-blue-hi")
+                    self.studentRef.child("description").setValue(self.student?.studentDescription)
+                    self.studentRef.child("host").setValue(self.student?.host)
+                    self.student.addSubtractVote(true)
+                }else{
+                    self.thumbVoteImage.hidden = true
+                }
             }
         })
     }
-
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        // UITapGestureRecognizer is set programatically.
-        
+        // UITapGestureRecognizer is set programatically
         let tap = UITapGestureRecognizer(target: self, action: #selector(StudentCellTableViewCell.voteTapped(_:)))
         tap.numberOfTapsRequired = 1
         thumbVoteImage.addGestureRecognizer(tap)

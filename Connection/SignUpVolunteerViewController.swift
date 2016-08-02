@@ -33,6 +33,13 @@ class SignUpVolunteerViewController: UIViewController {
     
     @IBAction func CancelDidTapped(sender: AnyObject) {
         //返回指定页面！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
+        do{
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let logInVC = storyboard.instantiateViewControllerWithIdentifier("LogInVC")
+            UIApplication.sharedApplication().keyWindow?.rootViewController = logInVC
+        }catch let signOutError as NSError{
+            print("Error signing out : \(signOutError)")
+        }
     }
     
     @IBAction func SignUpDidTapped(sender: AnyObject) {

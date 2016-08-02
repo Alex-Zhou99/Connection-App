@@ -54,9 +54,11 @@ class ConnectionCellTableViewCell: UITableViewCell {
                 
                 self.thumbVoteImage.image = UIImage(named: "cancel-button-md")
                 self.studentRef2.child("description").setValue(self.student?.studentDescription)
+                self.studentRef2.child("host").setValue(self.student?.host)
                 self.student.addSubtractVote(false)                
             }else{
                 self.studentRef2.child("description").setValue(self.student?.studentDescription)
+                self.studentRef2.child("host").setValue(self.student?.host)
                 //                self.studentRef.child("description").setValue(self.student?.studentDescription)
                 self.student.addSubtractVote(false)
                 

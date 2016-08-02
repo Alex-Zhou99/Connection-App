@@ -13,11 +13,9 @@ class Student {
     
     
     private var _studentRef: FIRDatabaseReference!
-    
     private var _studentKey: String!
     private var _studentDescription: String!
-//    private var _studentVotes: Int!
-//    private var _username: String!
+    private var _host: String!
     
     var studentKey: String {
         return _studentKey
@@ -27,18 +25,14 @@ class Student {
         return _studentDescription
     }
     
-//    var studentVotes: Int {
-//        return _studentVotes
-//    }
-    
-//    var username: String {
-//        return _username
-//    }
+    var host: String {
+        return _host
+    }
     
     // Initialize the new Joke
-    init(description: String, username: String) {
+    init(description: String, host: String) {
         self._studentDescription = description
-//        self._username = username
+        self._host = host
     }
     
     init(key: String, dictionary: Dictionary<String, AnyObject>) {
@@ -46,22 +40,15 @@ class Student {
         
         // Within the Joke, or Key, the following properties are children
         
-//        if let votes = dictionary["votes"] as? Int {
-//            self._jokeVotes = votes
-//        }
-        
         if let desc = dictionary["description"] as? String {
             self._studentDescription = desc
         }
         
-//        if let user = dictionary["author"] as? String {
-//            self._username = user
-//        } else {
-//            self._username = ""
-//        }
+        if let hosted = dictionary["host"] as? String {
+            self._host = hosted
+        }
         
         // The above properties are assigned to their key.
-        
         self._studentRef = DataService.dataService.STUT_REF.childByAppendingPath(self._studentKey)
     }
     

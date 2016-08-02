@@ -254,7 +254,7 @@ please click "Add" button on the top right to add students!</string>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
                                                 </textView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-button-blue-hi" translatesAutoresizingMaskIntoConstraints="NO" id="Vch-3F-SUs">
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-button-blue-hi" translatesAutoresizingMaskIntoConstraints="NO" id="Vch-3F-SUs">
                                                     <rect key="frame" x="347" y="154" width="67" height="31"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="67" id="57Q-K7-sYY"/>

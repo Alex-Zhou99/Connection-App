@@ -14,6 +14,7 @@ class FeedVCViewController: UIViewController, UITableViewDataSource, UITableView
 
     let studentRef = FIRDatabase.database().reference().child("students")
     var student = [Student]()
+    
     @IBOutlet weak var tableView: UITableView!
     
     func addActivityIndicatorToView(activityIndicator: UIActivityIndicatorView, uiview: UIView){
