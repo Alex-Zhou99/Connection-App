@@ -16,15 +16,11 @@ class DataService {
     static let dataService = DataService()
     
     private var _BASE_REF = URL_BASE
-    private var _USER_REF = URL_BASE.child("family-users")
-    private var _VOL_REF = URL_BASE.child("volunteer-users")
+    private var _USER_REF = URL_BASE.child("users")
     private var _STUT_REF = URL_BASE.child("students")
     
     var BASE_REF: FIRDatabaseReference {
         return _BASE_REF
-    }
-    var VOL_REF: FIRDatabaseReference{
-        return _VOL_REF
     }
     
     var USER_REF: FIRDatabaseReference {
@@ -37,23 +33,12 @@ class DataService {
     
     var CURRENT_USER_REF: FIRDatabaseReference {
          let uid = NSUserDefaults.standardUserDefaults().valueForKey("uid") as! String
-        let user = URL_BASE.child("family-users").child(uid)
+        let user = URL_BASE.child("users").child(uid)
         return user
 
     }
-    
     func createNewAccount(uid: String, user: Dictionary<String, String>) {
         USER_REF.child(uid).updateChildValues(user)
-    }
-    
-    var CURRENT2_USER_REF: FIRDatabaseReference{
-        let uid = NSUserDefaults.standardUserDefaults().valueForKey("uid") as! String
-        let user = URL_BASE.child("volunteer-users").child(uid)
-        return user
-    }
-    
-    func createNewAccount2(uid: String, user: Dictionary<String, String>){
-        VOL_REF.child(uid).updateChildValues(user)
     }
     
    }

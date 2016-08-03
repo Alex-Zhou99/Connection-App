@@ -45,7 +45,7 @@ class SignUpVolunteerViewController: UIViewController {
                     self.showErrorAlert("Alert", msg: "Check your email and password. Your password must be at least six characters.")
                 } else {
                     NSUserDefaults.standardUserDefaults().setValue(user!.uid, forKey: "uid")
-                    DataService.dataService.CURRENT2_USER_REF.setValue(["username": username, "email": email, "password": password, "status": "volunteer"])
+                    DataService.dataService.CURRENT_USER_REF.setValue(["username": username, "email": email, "password": password, "status": "volunteer"])
                     self.performSegueWithIdentifier("loggedIn2", sender: nil)
                 }
             })

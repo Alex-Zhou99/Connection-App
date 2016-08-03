@@ -22,17 +22,31 @@ class StudentCellTableViewCell: UITableViewCell {
     
     func configureCell(student: Student) {
         self.student = student
-        if(student.host == "hosttrue"){
-            self.studentDescription.text = student.studentDescription
-            self.thumbVoteImage.hidden  = false
-            studentRef = DataService.dataService.CURRENT_USER_REF.child("student").child(student.studentKey)
-            studentRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
-                self.thumbVoteImage.image = UIImage(named: "add-button-blue-hi")
-            })
-            }else{
-                self.studentDescription.text = "the student has done"
-                self.thumbVoteImage.hidden  = true
-        }
+        
+        DataService.dataService.CURRENT_USER_REF.child("status").observeSingleEventOfType(.Value, withBlock: { snapshot in
+            if let snap = snapshot.value {
+                print(snap)
+                if snap as! String == "host" && student.host == "hosttrue"
+                {
+                    self.studentDescription.text = student.studentDescription
+                    self.thumbVoteImage.hidden  = false
+                    self.studentRef = DataService.dataService.CURRENT_USER_REF.child("student").child(student.studentKey)
+                    self.studentRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
+                        self.thumbVoteImage.image = UIImage(named: "add-button-blue-hi")
+                    })
+                }else if snap as! String == "volunteer" && student.volunteer == "volunteertrue"{
+                    self.studentDescription.text = student.studentDescription
+                    self.thumbVoteImage.hidden  = false
+                    self.studentRef = DataService.dataService.CURRENT_USER_REF.child("student").child(student.studentKey)
+                    self.studentRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
+                        self.thumbVoteImage.image = UIImage(named: "add-button-blue-hi")
+                    })
+                }else{
+                    self.studentDescription.text = "the student has done"
+                    self.thumbVoteImage.hidden  = true
+                }
+            }
+        })
     }
     func voteTapped(sender: UITapGestureRecognizer) {
         // observeSingleEventOfType listens for a tap by the current user

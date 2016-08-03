@@ -16,6 +16,7 @@ class Student {
     private var _studentKey: String!
     private var _studentDescription: String!
     private var _host: String!
+    private var _volunteer: String!
     
     var studentKey: String {
         return _studentKey
@@ -28,22 +29,28 @@ class Student {
     var host: String {
         return _host
     }
+    var volunteer: String{
+        return _volunteer
+    }
     
     // Initialize the new Joke
-    init(description: String, host: String) {
+    init(description: String, host: String, volunteer: String) {
         self._studentDescription = description
         self._host = host
+        self._volunteer = volunteer
     }
     
     init(key: String, dictionary: Dictionary<String, AnyObject>) {
         self._studentKey = key
         
-        // Within the Joke, or Key, the following properties are children
         
         if let desc = dictionary["description"] as? String {
             self._studentDescription = desc
         }
         
+        if let vol = dictionary["volunteer"] as? String {
+            self._volunteer = vol
+        }
         if let hosted = dictionary["host"] as? String {
             self._host = hosted
         }
