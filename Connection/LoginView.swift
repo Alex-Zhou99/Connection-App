@@ -14,9 +14,6 @@ class LoginView: UIViewController {
     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,8 +21,6 @@ class LoginView: UIViewController {
     func dismissKeyboard(tap: UITapGestureRecognizer){
         view.endEditing(true)
     }
-    
-    
     @IBAction func logInDidTapped(sender: AnyObject)
     {
         let email = emailField.text!
@@ -33,8 +28,6 @@ class LoginView: UIViewController {
         
         if email != "" && password != ""
         {
-            
-            // Login with the Firebase's authUser method
             FIRAuth.auth()?.signInWithEmail(email, password: password, completion: {(user, error) in
                 if error != nil {
                     self.showErrorAlert("Alert", msg: "Check your username and password.")

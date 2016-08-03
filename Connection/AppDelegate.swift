@@ -17,7 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         login()
         return true
     }
-
     func applicationWillResignActive(application: UIApplication) {
     }
 

@@ -10,27 +10,16 @@ import UIKit
 import Firebase
 
 class FeedVCViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
-    
-
     let studentRef = FIRDatabase.database().reference().child("students")
     var student = [Student]()
-    
     @IBOutlet weak var tableView: UITableView!
-    
     func addActivityIndicatorToView(activityIndicator: UIActivityIndicatorView, uiview: UIView){
-        
         self.view.addSubview(activityIndicator)
-        
         //Don't forget this line
         activityIndicator.translatesAutoresizingMaskIntoConstraints.boolValue
-        
         view.addConstraint(NSLayoutConstraint(item: activityIndicator, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.CenterX, multiplier: 1, constant: 0))
         view.addConstraint(NSLayoutConstraint(item: activityIndicator, attribute: NSLayoutAttribute.CenterY, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.CenterY, multiplier: 1, constant: 0))
-        
-        
         activityIndicator.startAnimating()
-        
-        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
