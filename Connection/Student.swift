@@ -58,7 +58,8 @@ class Student {
         if addVote{            
  /*           let desc = FIRDatabase.database().reference().child("users").child(uid!).child("desc").childByAutoId()
             desc.setValue(_studentDescription)*/
-            DataService.dataService.STUT_REF.childByAppendingPath(self._studentKey).removeValue()
+            //DataService.dataService.STUT_REF.childByAppendingPath(self._studentKey).removeValue()
+            DataService.dataService.STUT_REF.childByAppendingPath(self._studentKey).child("host").setValue("hostfalse")
            
         }else{
             

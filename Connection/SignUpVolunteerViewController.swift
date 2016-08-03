@@ -64,7 +64,7 @@ class SignUpVolunteerViewController: UIViewController {
                     // Create and Login the New User with authUser
                     
                     NSUserDefaults.standardUserDefaults().setValue(user!.uid, forKey: "uid")
-                    DataService.dataService.CURRENT2_USER_REF.setValue(["username": username, "email": email, "password": password])
+                    DataService.dataService.CURRENT2_USER_REF.setValue(["username": username, "email": email, "password": password, "status": "volunteer"])
                     
                     
                     // Enter the app.

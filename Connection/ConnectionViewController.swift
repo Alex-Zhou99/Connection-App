@@ -12,9 +12,6 @@ import Firebase
 class ConnectionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
 
     let studentRef = FIRDatabase.database().reference()
-        //.childByAppendingPath(uid)
-    //FIRDatabase.database().reference().child("users").child(uid!).child("desc")
-    //let studentRef = DataService.dataService.CURRENT_USER_REF.child("student")
     var student = [Student]()
     @IBOutlet weak var tableView: UITableView!
     
@@ -27,15 +24,6 @@ class ConnectionViewController: UIViewController, UITableViewDataSource, UITable
         
          _ = DataService.dataService.CURRENT_USER_REF.child("student").observeEventType(.Value, withBlock: {
             snapshot in
-        // observeEventType is called whenever anything changes in the Firebase - new Jokes or Votes.
-        // It's also called here in viewDidLoad().
-        // It's always listening.
-        //let uid = FIRAuth.auth()?.currentUser?.uid
-//        studentRef.child("users").child(uid!).child("student").observeEventType(.Value, withBlock: { snapshot in
-            
-            // The snapshot is a current look at our jokes data.
-  
-            
             self.student = []
             
             if let snapshots = snapshot.children.allObjects as? [FIRDataSnapshot] {

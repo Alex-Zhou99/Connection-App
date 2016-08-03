@@ -103,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m2Z-08-SKL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-510" y="-171"/>
+            <point key="canvasLocation" x="-1270" y="337"/>
         </scene>
         <!--My Hosting Students-->
         <scene sceneID="gNl-wb-Odj">
@@ -218,7 +218,7 @@ please click "Add" button on the top right to add students!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UYu-2o-Si2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="599" y="-237"/>
+            <point key="canvasLocation" x="1033" y="-237"/>
         </scene>
         <!--FeedVC View Controller-->
         <scene sceneID="pYQ-jn-DQX">
@@ -254,7 +254,7 @@ please click "Add" button on the top right to add students!</string>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
                                                 </textView>
-                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-button-blue-hi" translatesAutoresizingMaskIntoConstraints="NO" id="Vch-3F-SUs">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-button-blue-hi" translatesAutoresizingMaskIntoConstraints="NO" id="Vch-3F-SUs">
                                                     <rect key="frame" x="347" y="154" width="67" height="31"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="67" id="57Q-K7-sYY"/>
@@ -296,7 +296,7 @@ please click "Add" button on the top right to add students!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fn0-fC-chw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1241" y="-237"/>
+            <point key="canvasLocation" x="1597" y="-237"/>
         </scene>
         <!--Status View Controller-->
         <scene sceneID="OG6-CA-iD3">
@@ -362,7 +362,7 @@ please click "Add" button on the top right to add students!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N9m-7a-hlO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-555" y="695"/>
+            <point key="canvasLocation" x="-663" y="337"/>
         </scene>
         <!--Sign Up Volunteer View Controller-->
         <scene sceneID="Tow-7y-Pme">
@@ -503,7 +503,7 @@ please click "Add" button on the top right to add students!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ayb-lI-wHk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1202" y="644"/>
+            <point key="canvasLocation" x="-36" y="726"/>
         </scene>
         <!--Sign Up View-->
         <scene sceneID="Yq4-bY-6gd">
@@ -637,7 +637,7 @@ please click "Add" button on the top right to add students!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xtj-4H-MZf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24" y="695"/>
+            <point key="canvasLocation" x="-36" y="-237"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Wt2-eE-XGM">
@@ -656,7 +656,141 @@ please click "Add" button on the top right to add students!</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iDS-wH-8aB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="16" y="-237"/>
+            <point key="canvasLocation" x="542" y="-237"/>
+        </scene>
+        <!--My Hosting Students-->
+        <scene sceneID="rzP-Yl-dE9">
+            <objects>
+                <viewController id="j91-Bh-nxm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Aqz-fa-hp2"/>
+                        <viewControllerLayoutGuide type="bottom" id="fqh-P1-hTo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dzm-KR-d11">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhT-YG-bJa">
+                                <rect key="frame" x="0.0" y="698" width="414" height="38"/>
+                                <color key="backgroundColor" red="0.43921568630000002" green="0.62745098040000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="2Tf-3B-cVW"/>
+                                </constraints>
+                                <state key="normal" title="Log out">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logout:" destination="j91-Bh-nxm" eventType="touchUpInside" id="4oC-3F-qqO"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="189" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iVN-7t-3pa">
+                                <rect key="frame" x="0.0" y="132" width="414" height="566"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ConnectionCellTableViewCell" rowHeight="189" id="gPW-hw-kJN" customClass="ConnectionCellTableViewCell" customModule="Connection" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="189"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gPW-hw-kJN" id="46t-kh-xOl">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="188.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancel-button-md" translatesAutoresizingMaskIntoConstraints="NO" id="mpZ-TV-4dp">
+                                                    <rect key="frame" x="341" y="144" width="65" height="36.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="36.5" id="4O8-yh-EAW"/>
+                                                        <constraint firstAttribute="width" constant="65" id="cUb-75-Gs2"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36.5" id="dCX-Fu-Yv4"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="hrd-10-PDR"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FfD-JI-K6w">
+                                                    <rect key="frame" x="8" y="8" width="398" height="139"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="139" id="77r-xK-wQT"/>
+                                                    </constraints>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                                                </textView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APl-HP-1Nm">
+                                                    <rect key="frame" x="196" y="148" width="46" height="30"/>
+                                                    <state key="normal" title="Button"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="FfD-JI-K6w" firstAttribute="leading" secondItem="46t-kh-xOl" secondAttribute="leading" constant="8" id="B5k-2G-VCc"/>
+                                                <constraint firstItem="FfD-JI-K6w" firstAttribute="top" secondItem="46t-kh-xOl" secondAttribute="top" constant="8" id="C4l-l0-D3Q"/>
+                                                <constraint firstAttribute="trailing" secondItem="FfD-JI-K6w" secondAttribute="trailing" constant="8" id="GT6-AK-T68"/>
+                                                <constraint firstAttribute="trailing" secondItem="mpZ-TV-4dp" secondAttribute="trailing" constant="8" id="Ird-hu-SpX"/>
+                                                <constraint firstAttribute="bottom" secondItem="mpZ-TV-4dp" secondAttribute="bottom" constant="8" id="cbx-cW-PXP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.88449519229999995" green="0.88449519229999995" blue="0.88449519229999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="studentDescription" destination="FfD-JI-K6w" id="938-HD-aEv"/>
+                                            <outlet property="thumbVoteImage" destination="mpZ-TV-4dp" id="T0z-Hi-e50"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iOC-dh-dBS">
+                                <rect key="frame" x="0.0" y="64" width="414" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="QF6-RZ-8ck"/>
+                                </constraints>
+                                <string key="text">If you want to be a host,        
+please click "Add" button on the top right to add students!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iVN-7t-3pa" firstAttribute="leading" secondItem="dzm-KR-d11" secondAttribute="leadingMargin" constant="-20" id="7gM-oc-qiy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iOC-dh-dBS" secondAttribute="trailing" constant="-20" id="DHq-AZ-lBY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iVN-7t-3pa" secondAttribute="trailing" constant="-20" id="IOV-A8-9u7"/>
+                            <constraint firstItem="IhT-YG-bJa" firstAttribute="leading" secondItem="dzm-KR-d11" secondAttribute="leadingMargin" constant="-20" id="UFb-rP-z17"/>
+                            <constraint firstItem="iVN-7t-3pa" firstAttribute="top" secondItem="iOC-dh-dBS" secondAttribute="bottom" constant="8" id="YFa-b2-dkN"/>
+                            <constraint firstItem="fqh-P1-hTo" firstAttribute="top" secondItem="IhT-YG-bJa" secondAttribute="bottom" id="cwP-pM-c6u"/>
+                            <constraint firstItem="IhT-YG-bJa" firstAttribute="top" secondItem="iVN-7t-3pa" secondAttribute="bottom" id="hOD-U9-drb"/>
+                            <constraint firstItem="iOC-dh-dBS" firstAttribute="top" secondItem="Aqz-fa-hp2" secondAttribute="bottom" id="p2e-xt-L3D"/>
+                            <constraint firstItem="iOC-dh-dBS" firstAttribute="leading" secondItem="dzm-KR-d11" secondAttribute="leadingMargin" constant="-20" id="sH9-42-v2C"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IhT-YG-bJa" secondAttribute="trailing" constant="-20" id="wYc-ZI-jJs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Hosting Students" id="TfH-R3-eAF">
+                        <barButtonItem key="rightBarButtonItem" title="Add" width="3" id="DT3-iB-3sZ"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="tableView" destination="iVN-7t-3pa" id="zca-Dk-bmd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="epj-tk-Bea" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1033" y="726"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wfp-BN-C9p">
+            <objects>
+                <navigationController storyboardIdentifier="VolRoomVC" automaticallyAdjustsScrollViewInsets="NO" id="SUC-xi-JsC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kY5-sT-Ost">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="j91-Bh-nxm" kind="relationship" relationship="rootViewController" id="5km-un-tHF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ap-Pk-V4S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="542" y="726"/>
         </scene>
     </scenes>
     <resources>
@@ -664,6 +798,6 @@ please click "Add" button on the top right to add students!</string>
         <image name="cancel-button-md" width="297" height="162"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="BpY-2D-nd8"/>
+        <segue reference="jWB-4R-2zh"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -26,14 +26,8 @@ class StudentCellTableViewCell: UITableViewCell {
             self.studentDescription.text = student.studentDescription
             self.thumbVoteImage.hidden  = false
             studentRef = DataService.dataService.CURRENT_USER_REF.child("student").child(student.studentKey)
-
             studentRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
-                if(self.student.host == "hosttrue"){
-                    
-                    self.thumbVoteImage.image = UIImage(named: "add-button-blue-hi")
-                }else{
-                    
-                }
+                self.thumbVoteImage.image = UIImage(named: "add-button-blue-hi")
             })
             }else{
                 self.studentDescription.text = "the student has done"
@@ -44,15 +38,11 @@ class StudentCellTableViewCell: UITableViewCell {
         // observeSingleEventOfType listens for a tap by the current user
         studentRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
             if (snapshot.value as? NSNull) != nil {
-                if(self.student.host == "hosttrue"){
-                    self.thumbVoteImage.hidden = false
-                    self.thumbVoteImage.image = UIImage(named: "add-button-blue-hi")
-                    self.studentRef.child("description").setValue(self.student?.studentDescription)
-                    self.studentRef.child("host").setValue(self.student?.host)
-                    self.student.addSubtractVote(true)
-                }else{
-                    self.thumbVoteImage.hidden = true
-                }
+                self.studentRef.child("description").setValue(self.student?.studentDescription)
+                self.studentRef.child("host").setValue(self.student?.host)
+                
+                self.student.addSubtractVote(true)
+
             }
         })
     }

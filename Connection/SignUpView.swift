@@ -65,7 +65,7 @@ class SignUpView: UIViewController {
                     
                     NSUserDefaults.standardUserDefaults().setValue(user!.uid, forKey: "uid")
 
-                    DataService.dataService.CURRENT_USER_REF.setValue(["username": username, "email": email, "password": password])
+                    DataService.dataService.CURRENT_USER_REF.setValue(["username": username, "email": email, "password": password, "status": "host"])
 
                     
                     // Enter the app.
