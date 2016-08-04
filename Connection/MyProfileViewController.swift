@@ -47,5 +47,30 @@ class MyProfileViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     @IBAction func saveProfileButton(sender: AnyObject) {
+        DataService.dataService.CURRENT_USER_REF.child("username").setValue(phoneNumber.text)
+        let user = FIRAuth.auth()?.currentUser!
+        if let user = user{
+            user.updateEmail(email.text!, completion: { (error) in
+                if let error = error {
+                    print(error.description)
+                }else{
+                    DataService.dataService.CURRENT_USER_REF.child("email").setValue(self.email.text)
+                }
+            })
+            user.updatePassword(password.text!, completion: { (error) in
+                if let error = error {
+                    print(error.description)
+                }else{
+                    DataService.dataService.CURRENT_USER_REF.child("password").setValue(self.password.text)
+                }
+            })
+        }
+        DataService.dataService.CURRENT_USER_REF.child("status").observeSingleEventOfType(.Value, withBlock: { snapshot in
+            if let snap = snapshot.value {
+                if snap as! String == "host"{
+                    DataService.dataService.CURRENT_USER_REF.child("address").setValue(self.address.text)
+                }
+            }
+        })
     }
 }
