@@ -46,6 +46,9 @@ target 'Connection' do
 
 end
 ```
+##Architecture
+
+![](https://github.com/shi-edward/Connection-App/blob/master/Project-Image/Screen%20Shot%202016-08-04%20at%205.07.34%20PM.png) 
 
 ##Screenshots
 
@@ -64,3 +67,7 @@ firebase database
 ![](https://github.com/shi-edward/Connection-App/blob/master/Project-Image/FjZVm2FjeClzkK-0OMf19Ez0XBcH.png)
 
 ![](https://github.com/shi-edward/Connection-App/blob/master/Project-Image/FphVJA_p3vHnWLEWZON8ZnJKZvpB.png)
+
+##Discuss
+* submit: issue(https://github.com/shi-edward/Connection-App/issues)
+* email: edwardshi95@gmail.com
