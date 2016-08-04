@@ -103,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m2Z-08-SKL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1270" y="337"/>
+            <point key="canvasLocation" x="-1046" y="337"/>
         </scene>
         <!--Students-->
         <scene sceneID="gNl-wb-Odj">
@@ -154,7 +154,6 @@
                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
                                                 </textView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xT4-Pn-syL">
                                                     <rect key="frame" x="8" y="107" width="398" height="20.5"/>
@@ -241,7 +240,7 @@ please click "Add" button on the top right to add students!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UYu-2o-Si2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1033" y="-237"/>
+            <point key="canvasLocation" x="941" y="-237"/>
         </scene>
         <!--My Profile-->
         <scene sceneID="PGA-Tu-OjI">
@@ -324,7 +323,7 @@ please click "Add" button on the top right to add students!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t6H-mW-Mti" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1095" y="595"/>
+            <point key="canvasLocation" x="941" y="569"/>
         </scene>
         <!--FeedVC View Controller-->
         <scene sceneID="pYQ-jn-DQX">
@@ -358,7 +357,6 @@ please click "Add" button on the top right to add students!</string>
                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
                                                 </textView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-button-blue-hi" translatesAutoresizingMaskIntoConstraints="NO" id="Vch-3F-SUs">
                                                     <rect key="frame" x="347" y="154" width="67" height="31"/>
@@ -402,7 +400,7 @@ please click "Add" button on the top right to add students!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fn0-fC-chw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1597" y="-237"/>
+            <point key="canvasLocation" x="1421" y="-237"/>
         </scene>
         <!--Status View Controller-->
         <scene sceneID="OG6-CA-iD3">
@@ -468,7 +466,7 @@ please click "Add" button on the top right to add students!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N9m-7a-hlO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-663" y="337"/>
+            <point key="canvasLocation" x="-579" y="337"/>
         </scene>
         <!--Sign Up Volunteer View Controller-->
         <scene sceneID="Tow-7y-Pme">
@@ -609,7 +607,7 @@ please click "Add" button on the top right to add students!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ayb-lI-wHk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-36" y="726"/>
+            <point key="canvasLocation" x="-36" y="588"/>
         </scene>
         <!--Sign Up View-->
         <scene sceneID="Yq4-bY-6gd">
@@ -772,7 +770,7 @@ please click "Add" button on the top right to add students!</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iDS-wH-8aB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="542" y="-237"/>
+            <point key="canvasLocation" x="468" y="-237"/>
         </scene>
     </scenes>
     <resources>
@@ -781,6 +779,6 @@ please click "Add" button on the top right to add students!</string>
         <image name="user_menu" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8NE-51-UD1"/>
+        <segue reference="BpY-2D-nd8"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -38,6 +38,7 @@ class ConnectionCellTableViewCell: UITableViewCell {
                         if let snap = snapshot.value{
                             if snap as! String == "hosttrue"{
                                 self.addressLabel.text = "no host family"
+                                self.phoneNumber.hidden = true
                             }else{
                                 self.addressLabel.text = "Host Family Address:  " + (snap as! String)
                                 studentRef2.child("phoneNumber").observeSingleEventOfType(.Value, withBlock: { snapshot in
