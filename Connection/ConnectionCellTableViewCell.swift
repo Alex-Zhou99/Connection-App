@@ -18,15 +18,19 @@ class ConnectionCellTableViewCell: UITableViewCell {
     func configureCell(student: Student) {
         self.student = student
         self.studentDescription.text = student.studentDescription
-        studentRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
-             self.thumbVoteImage.image = UIImage(named: "cancel-button-md")
-        })
     }
     func voteTapped(sender: UITapGestureRecognizer) {
         studentRef2 = FIRDatabase.database().reference().child("students").child(student.studentKey)
-        studentRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
-            self.studentRef2.child("host").setValue("hosttrue")
-            self.student.addSubtractVote(false)
+        DataService.dataService.CURRENT_USER_REF.child("status").observeSingleEventOfType(.Value, withBlock: { snapshot in
+            if let snap = snapshot.value{
+                if snap as! String == "host" {
+                    self.studentRef2.child("host").setValue("hosttrue")
+                    self.student.addSubtractVote()
+                }else{
+                    self.studentRef2.child("volunteer").setValue("volunteertrue")
+                    self.student.addSubtractVote()
+                }
+            }
         })
     }
     override func awakeFromNib() {

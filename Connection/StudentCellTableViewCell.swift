@@ -24,16 +24,10 @@ class StudentCellTableViewCell: UITableViewCell {
                     self.studentDescription.text = student.studentDescription
                     self.thumbVoteImage.hidden  = false
                     self.studentRef = DataService.dataService.CURRENT_USER_REF.child("student").child(student.studentKey)
-                    self.studentRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
-                        self.thumbVoteImage.image = UIImage(named: "add-button-blue-hi")
-                    })
                 }else if snap as! String == "volunteer" && student.volunteer == "volunteertrue"{
                     self.studentDescription.text = student.studentDescription
                     self.thumbVoteImage.hidden  = false
                     self.studentRef = DataService.dataService.CURRENT_USER_REF.child("student").child(student.studentKey)
-                    self.studentRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
-                        self.thumbVoteImage.image = UIImage(named: "add-button-blue-hi")
-                    })
                 }else{
                     self.studentDescription.text = "the student has done"
                     self.thumbVoteImage.hidden  = true

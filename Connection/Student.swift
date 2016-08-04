@@ -44,14 +44,10 @@ class Student {
         if let hosted = dictionary["host"] as? String {
             self._host = hosted
         }
-        self._studentRef = DataService.dataService.STUT_REF.childByAppendingPath(self._studentKey)
+        self._studentRef = DataService.dataService.STUT_REF.child(self._studentKey)
     }
-    func addSubtractVote(addVote: Bool) {
-        if addVote{
-            DataService.dataService.STUT_REF.childByAppendingPath(self._studentKey).child("host").setValue("hostfalse")
-        }else{
-            DataService.dataService.CURRENT_USER_REF.child("student").childByAppendingPath(self._studentKey).removeValue()
-        } 
+    func addSubtractVote() {
+            DataService.dataService.CURRENT_USER_REF.child("student").child(self._studentKey).removeValue()
     }
     func status(status: Bool){
         if status{
