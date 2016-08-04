@@ -12,20 +12,14 @@ import Firebase
 class StudentCellTableViewCell: UITableViewCell {
 
     @IBOutlet weak var studentDescription: UITextView!
-//    @IBOutlet weak var usernameLabel: UILabel!
- //   @IBOutlet weak var totalVotesLabel: UILabel!
     @IBOutlet weak var thumbVoteImage: UIImageView!
-
-    
     var student: Student!
     var studentRef: FIRDatabaseReference!
-    
     func configureCell(student: Student) {
         self.student = student
         
         DataService.dataService.CURRENT_USER_REF.child("status").observeSingleEventOfType(.Value, withBlock: { snapshot in
             if let snap = snapshot.value {
-                print(snap)
                 if snap as! String == "host" && student.host == "hosttrue"
                 {
                     self.studentDescription.text = student.studentDescription
@@ -49,14 +43,15 @@ class StudentCellTableViewCell: UITableViewCell {
         })
     }
     func voteTapped(sender: UITapGestureRecognizer) {
-        // observeSingleEventOfType listens for a tap by the current user
-        studentRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
-            if (snapshot.value as? NSNull) != nil {
-                self.studentRef.child("description").setValue(self.student?.studentDescription)
-                self.studentRef.child("host").setValue(self.student?.host)
-                
-                self.student.addSubtractVote(true)
-
+        DataService.dataService.CURRENT_USER_REF.child("status").observeSingleEventOfType(.Value, withBlock: { snapshot in
+            if let snap = snapshot.value{
+                if snap as! String == "host" {
+                    self.studentRef.child("description").setValue(self.student?.studentDescription)
+                    self.student.status(true)
+                }else{
+                    self.studentRef.child("description").setValue(self.student?.studentDescription)
+                    self.student.status(false)
+                }
             }
         })
     }
@@ -68,6 +63,4 @@ class StudentCellTableViewCell: UITableViewCell {
         thumbVoteImage.addGestureRecognizer(tap)
         thumbVoteImage.userInteractionEnabled = true
     }
-
-
 }
