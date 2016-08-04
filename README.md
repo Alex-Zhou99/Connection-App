@@ -50,6 +50,8 @@ end
 
 ![](https://github.com/shi-edward/Connection-App/blob/master/Project-Image/Screen%20Shot%202016-08-04%20at%205.07.34%20PM.png) 
 
+![](https://github.com/shi-edward/Connection-App/blob/master/Project-Image/Untitled.mov)
+
 ##Screenshots
 
 firebase database
