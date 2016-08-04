@@ -46,14 +46,27 @@ class Student {
         }
         self._studentRef = DataService.dataService.STUT_REF.child(self._studentKey)
     }
-    func addSubtractVote() {
+    func remove() {
             DataService.dataService.CURRENT_USER_REF.child("student").child(self._studentKey).removeValue()
     }
     func status(status: Bool){
         if status{
-            DataService.dataService.STUT_REF.child(self._studentKey).child("host").setValue("hostfalse")
+            DataService.dataService.CURRENT_USER_REF.child("address").observeSingleEventOfType(.Value, withBlock: { snapshot in
+                if let snap = snapshot.value {
+                    DataService.dataService.STUT_REF.child(self._studentKey).child("host").setValue(snap)
+                }
+            })
+            DataService.dataService.CURRENT_USER_REF.child("username").observeSingleEventOfType(.Value, withBlock: { snapshot in
+                if let snap = snapshot.value {
+                    DataService.dataService.STUT_REF.child(self._studentKey).child("phoneNumber").setValue(snap)
+                }
+            })
         }else{
-            DataService.dataService.STUT_REF.child(self._studentKey).child("volunteer").setValue("volunteerfalse")
+            DataService.dataService.CURRENT_USER_REF.child("username").observeSingleEventOfType(.Value, withBlock: { snapshot in
+                if let snap = snapshot.value {
+                    DataService.dataService.STUT_REF.child(self._studentKey).child("volunteer").setValue(snap)
+                }
+            })
         }
     }
 }
