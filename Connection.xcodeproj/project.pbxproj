@@ -149,7 +149,6 @@
 			children = (
 				2BE9645E1D52834000EC2395 /* finish */,
 				2BCF11931D3C706500BCFE22 /* ConnectionCellTableViewCell.swift */,
-				2BCF11A51D3C709C00BCFE22 /* StudentCellTableViewCell.swift */,
 				2BCF11991D3C707600BCFE22 /* FeedVCViewController.swift */,
 				2BCF11951D3C706B00BCFE22 /* ConnectionViewController.swift */,
 				2BCF119B1D3C707B00BCFE22 /* LaunchScreen.storyboard */,
@@ -189,6 +188,7 @@
 				2BCF11971D3C707000BCFE22 /* DataService.swift */,
 				2BCF119D1D3C707F00BCFE22 /* LoginView.swift */,
 				2B2F76681D4FE1730032F67E /* StatusViewController.swift */,
+				2BCF11A51D3C709C00BCFE22 /* StudentCellTableViewCell.swift */,
 			);
 			name = finish;
 			sourceTree = "<group>";

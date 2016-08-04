@@ -34,6 +34,7 @@ class SignUpVolunteerViewController: UIViewController {
             print("Error signing out : \(signOutError)")
         }
     }
+    //username is phone number
     @IBAction func SignUpDidTapped(sender: AnyObject) {
         let username = UsernameTextField.text!
         let email = emailTextField.text!

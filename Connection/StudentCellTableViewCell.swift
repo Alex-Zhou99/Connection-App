@@ -10,7 +10,6 @@ import UIKit
 import Firebase
 
 class StudentCellTableViewCell: UITableViewCell {
-
     @IBOutlet weak var studentDescription: UITextView!
     @IBOutlet weak var thumbVoteImage: UIImageView!
     var student: Student!
@@ -57,7 +56,6 @@ class StudentCellTableViewCell: UITableViewCell {
     }
     override func awakeFromNib() {
         super.awakeFromNib()
-        // UITapGestureRecognizer is set programatically
         let tap = UITapGestureRecognizer(target: self, action: #selector(StudentCellTableViewCell.voteTapped(_:)))
         tap.numberOfTapsRequired = 1
         thumbVoteImage.addGestureRecognizer(tap)

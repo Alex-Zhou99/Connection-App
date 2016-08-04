@@ -14,6 +14,7 @@ class SignUpView: UIViewController {
     @IBOutlet weak var UsernameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextFeild: UITextField!
+    @IBOutlet weak var hostFamilyAddressFeild: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -33,23 +34,25 @@ class SignUpView: UIViewController {
             print("Error signing out : \(signOutError)")
         }
     }
+    //username is phone number
     @IBAction func SignUpDidTapped(sender: AnyObject) {
         let username = UsernameTextField.text!
         let email = emailTextField.text!
         let password = passwordTextFeild.text!
-        if username != "" && email != "" && password != "" {
+        let hostFamilyAddress = hostFamilyAddressFeild.text!
+        if username != "" && email != "" && password != "" && hostFamilyAddress != ""{
             FIRAuth.auth()?.createUserWithEmail(email, password: password, completion: { (user, error) in
                 if error != nil {
                     print(error)
                     self.showErrorAlert("Alert", msg: "Check your email and password. Your password must be at least six characters.")
                 } else {
                     NSUserDefaults.standardUserDefaults().setValue(user!.uid, forKey: "uid")
-                    DataService.dataService.CURRENT_USER_REF.setValue(["username": username, "email": email, "password": password, "status": "host"])
+                    DataService.dataService.CURRENT_USER_REF.setValue(["username": username, "email": email, "password": password, "address": hostFamilyAddress, "status": "host"])
                     self.performSegueWithIdentifier("loggedIn", sender: nil)
                 }
             })
         } else {
-            showErrorAlert("Alert", msg: "Don't forget to enter your email, password, and a username.")
+            showErrorAlert("Alert", msg: "Don't forget to enter your email, password, a username and a host family address.")
         }
     }
     func showErrorAlert(title: String, msg: String) {

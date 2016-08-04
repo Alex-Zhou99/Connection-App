@@ -10,7 +10,6 @@ import UIKit
 import Firebase
 
 class ConnectionCellTableViewCell: UITableViewCell {
-    
     @IBOutlet weak var studentDescription: UITextView!
     @IBOutlet weak var thumbVoteImage: UIImageView!
     var student: Student!
@@ -37,6 +36,4 @@ class ConnectionCellTableViewCell: UITableViewCell {
         thumbVoteImage.addGestureRecognizer(tap)
         thumbVoteImage.userInteractionEnabled = true
     }
-    
-    
 }
