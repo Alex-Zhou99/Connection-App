@@ -54,28 +54,10 @@ firebase database
 ![](https://github.com/shi-edward/Connection-App/blob/master/Project-Image/Screen%20Shot%202016-08-04%20at%204.55.32%20PM.png)
 ![](https://github.com/shi-edward/Connection-App/blob/master/Project-Image/Screen%20Shot%202016-08-04%20at%204.55.44%20PM.png)
 
-login screen
-
 ![](https://github.com/shi-edward/Connection-App/blob/master/Project-Image/FiwuvXyUzibRYoxPJyBYe2a6lSVw.png)
-
-sign up screen (host family & volunteer)
-
 ![](https://github.com/shi-edward/Connection-App/blob/master/Project-Image/Fi06P6PMROb6kdC-k9nJ1Ayx-tTh.png)
-
 ![](https://github.com/shi-edward/Connection-App/blob/master/Project-Image/FgScXDAh9cd7pfTv9dsuu7IlK1Y7.png)
-
-profile screen
-
 ![](https://github.com/shi-edward/Connection-App/blob/master/Project-Image/FhVFzw-Y_TEmVmCNg0K_DvrFuFiw.png)
-
-students' information screen
-
 ![](https://github.com/shi-edward/Connection-App/blob/master/Project-Image/FphVJA_p3vHnWLEWZON8ZnJKZvpB.png)
-
-volunteer screen
-
 ![](https://github.com/shi-edward/Connection-App/blob/master/Project-Image/FjZVm2FjeClzkK-0OMf19Ez0XBcH.png)
-
-host family screen
-
 ![](https://github.com/shi-edward/Connection-App/blob/master/Project-Image/Fjk6NyJ-Lbom2XUUP3UYXSojk1YN.png)
