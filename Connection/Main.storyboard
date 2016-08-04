@@ -105,7 +105,7 @@
             </objects>
             <point key="canvasLocation" x="-1270" y="337"/>
         </scene>
-        <!--My Hosting Students-->
+        <!--Students-->
         <scene sceneID="gNl-wb-Odj">
             <objects>
                 <viewController storyboardIdentifier="MyHostingStudents" id="f5k-MP-1rK" customClass="ConnectionViewController" customModule="Connection" customModuleProvider="target" sceneMemberID="viewController">
@@ -204,8 +204,12 @@ please click "Add" button on the top right to add students!</string>
                             <constraint firstItem="1k4-be-2vf" firstAttribute="top" secondItem="Dlg-46-qMC" secondAttribute="bottom" id="g0E-DF-MAq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="My Hosting Students" id="dYq-zg-XBF">
-                        <barButtonItem key="leftBarButtonItem" image="user_menu" id="l5c-ob-pDE"/>
+                    <navigationItem key="navigationItem" title="Students" id="dYq-zg-XBF">
+                        <barButtonItem key="leftBarButtonItem" image="user_menu" id="l5c-ob-pDE">
+                            <connections>
+                                <segue destination="FVU-zS-TdJ" kind="push" id="TdZ-DD-3Dh"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add" width="3" id="03d-QE-IV5">
                             <connections>
                                 <segue destination="HJm-NE-bb9" kind="show" id="zdr-r2-QmD"/>
@@ -220,6 +224,89 @@ please click "Add" button on the top right to add students!</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UYu-2o-Si2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1033" y="-237"/>
+        </scene>
+        <!--My Profile-->
+        <scene sceneID="PGA-Tu-OjI">
+            <objects>
+                <viewController id="FVU-zS-TdJ" customClass="MyProfileViewController" customModule="Connection" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vv7-Vs-rVr"/>
+                        <viewControllerLayoutGuide type="bottom" id="gYB-fJ-IXc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yGm-wb-81a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lFE-kY-Ba1">
+                                <rect key="frame" x="105" y="210" width="289" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kdJ-uc-JFY">
+                                <rect key="frame" x="105" y="250" width="289" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wtd-Y0-Sgs">
+                                <rect key="frame" x="105" y="290" width="289" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ag8-Wk-60b">
+                                <rect key="frame" x="105" y="330" width="289" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAH-ji-zum">
+                                <rect key="frame" x="11" y="210" width="86" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfA-Nq-nha">
+                                <rect key="frame" x="11" y="250" width="86" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUY-cS-oRs">
+                                <rect key="frame" x="11" y="290" width="86" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvd-z5-dft">
+                                <rect key="frame" x="0.0" y="385" width="414" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveProfileButton:" destination="FVU-zS-TdJ" eventType="touchUpInside" id="8gC-8p-ltK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXG-H3-544">
+                                <rect key="frame" x="11" y="330" width="86" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Profile" id="KfY-Bf-k7V"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="address" destination="ag8-Wk-60b" id="QSf-KV-mOS"/>
+                        <outlet property="addressLabel" destination="kXG-H3-544" id="r2s-Wy-Be6"/>
+                        <outlet property="email" destination="kdJ-uc-JFY" id="eMi-yb-aFX"/>
+                        <outlet property="password" destination="Wtd-Y0-Sgs" id="G7W-Mj-bQy"/>
+                        <outlet property="phoneNumber" destination="lFE-kY-Ba1" id="3Br-4w-W9F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t6H-mW-Mti" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1095" y="595"/>
         </scene>
         <!--FeedVC View Controller-->
         <scene sceneID="pYQ-jn-DQX">

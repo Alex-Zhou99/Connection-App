@@ -11,6 +11,7 @@
 		2B149E2F1D303EAB00256862 /* ConnectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B149E2E1D303EAB00256862 /* ConnectionTests.swift */; };
 		2B149E3A1D303EAB00256862 /* ConnectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B149E391D303EAB00256862 /* ConnectionUITests.swift */; };
 		2B149E4C1D3040CF00256862 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B149E4B1D3040CF00256862 /* GoogleService-Info.plist */; };
+		2B2D20741D52F4E900157E21 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2D20731D52F4E900157E21 /* MyProfileViewController.swift */; };
 		2B2E688B1D3C9F300040DAEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B2E688A1D3C9F300040DAEA /* Assets.xcassets */; };
 		2B2F76691D4FE1730032F67E /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2F76681D4FE1730032F67E /* StatusViewController.swift */; };
 		2B2F766B1D50030A0032F67E /* SignUpVolunteerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2F766A1D50030A0032F67E /* SignUpVolunteerViewController.swift */; };
@@ -58,6 +59,7 @@
 		2B149E391D303EAB00256862 /* ConnectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionUITests.swift; sourceTree = "<group>"; };
 		2B149E3B1D303EAB00256862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B149E4B1D3040CF00256862 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2B2D20731D52F4E900157E21 /* MyProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
 		2B2E688A1D3C9F300040DAEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B2F76681D4FE1730032F67E /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		2B2F766A1D50030A0032F67E /* SignUpVolunteerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVolunteerViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				2BCF119B1D3C707B00BCFE22 /* LaunchScreen.storyboard */,
 				2BCF119F1D3C708800BCFE22 /* Main.storyboard */,
 				2BCF11A31D3C709700BCFE22 /* Student.swift */,
+				2B2D20731D52F4E900157E21 /* MyProfileViewController.swift */,
 				2B2E688A1D3C9F300040DAEA /* Assets.xcassets */,
 				2B149E4B1D3040CF00256862 /* GoogleService-Info.plist */,
 				2B149E251D303EAB00256862 /* Info.plist */,
@@ -472,6 +475,7 @@
 				2BCF11A61D3C709C00BCFE22 /* StudentCellTableViewCell.swift in Sources */,
 				2BCF11A21D3C708F00BCFE22 /* SignUpView.swift in Sources */,
 				2BCF11941D3C706500BCFE22 /* ConnectionCellTableViewCell.swift in Sources */,
+				2B2D20741D52F4E900157E21 /* MyProfileViewController.swift in Sources */,
 				2BCF11961D3C706B00BCFE22 /* ConnectionViewController.swift in Sources */,
 				2BCF11981D3C707000BCFE22 /* DataService.swift in Sources */,
 				2B2F766B1D50030A0032F67E /* SignUpVolunteerViewController.swift in Sources */,
