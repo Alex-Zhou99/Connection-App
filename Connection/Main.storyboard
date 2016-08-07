@@ -158,13 +158,13 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xT4-Pn-syL">
                                                     <rect key="frame" x="8" y="107" width="398" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QzY-vf-hwz">
                                                     <rect key="frame" x="8" y="135" width="398" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -277,19 +277,19 @@ please click "Add" button on the top right to add students!</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAH-ji-zum">
                                 <rect key="frame" x="11" y="210" width="86" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfA-Nq-nha">
                                 <rect key="frame" x="11" y="250" width="86" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUY-cS-oRs">
                                 <rect key="frame" x="11" y="290" width="86" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvd-z5-dft">
@@ -305,7 +305,7 @@ please click "Add" button on the top right to add students!</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXG-H3-544">
                                 <rect key="frame" x="11" y="330" width="86" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -418,27 +418,43 @@ please click "Add" button on the top right to add students!</string>
                                 <rect key="frame" x="208" y="0.0" width="1" height="736"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Host Family" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KrT-UO-mef">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Host Family" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KrT-UO-mef">
                                 <rect key="frame" x="60" y="288" width="98" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="Cta-QT-UT4"/>
+                                    <constraint firstAttribute="width" constant="98" id="dK1-Rm-o10"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Volunteer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaA-KL-jD8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volunteer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaA-KL-jD8">
                                 <rect key="frame" x="267" y="288" width="98" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="98" id="MJ3-xa-unE"/>
+                                    <constraint firstAttribute="height" constant="37" id="Xun-dW-ayQ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfM-SS-C0S">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfM-SS-C0S">
                                 <rect key="frame" x="81" y="352" width="57" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="Lkf-TL-BtI"/>
+                                    <constraint firstAttribute="width" constant="57" id="eXb-By-I7L"/>
+                                </constraints>
                                 <state key="normal" title="Select &gt;"/>
                                 <connections>
                                     <segue destination="4MT-XM-VDi" kind="presentation" id="W0d-sc-1uW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRe-tu-E8l">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRe-tu-E8l">
                                 <rect key="frame" x="288" y="352" width="57" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="57" id="5AJ-sz-l4S"/>
+                                    <constraint firstAttribute="height" constant="31" id="RgY-6e-vAS"/>
+                                </constraints>
                                 <state key="normal" title="Select &gt;"/>
                                 <connections>
                                     <segue destination="MV2-SF-4VG" kind="presentation" id="U5e-Lr-6VL"/>
@@ -459,8 +475,16 @@ please click "Add" button on the top right to add students!</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="qfM-SS-C0S" firstAttribute="leading" secondItem="5Lz-va-sEw" secondAttribute="leading" constant="81" id="1WR-lq-g1U"/>
                             <constraint firstItem="hDr-MQ-9rQ" firstAttribute="top" secondItem="5Lz-va-sEw" secondAttribute="top" id="D7t-fh-B1a"/>
+                            <constraint firstItem="UaA-KL-jD8" firstAttribute="top" secondItem="Smv-Ob-VkZ" secondAttribute="bottom" constant="268" id="Mor-to-vqp"/>
+                            <constraint firstItem="KrT-UO-mef" firstAttribute="leading" secondItem="5Lz-va-sEw" secondAttribute="leading" constant="60" id="NPE-Pm-3ak"/>
+                            <constraint firstAttribute="trailing" secondItem="UaA-KL-jD8" secondAttribute="trailing" constant="49" id="VMw-Q6-JJk"/>
                             <constraint firstItem="hDr-MQ-9rQ" firstAttribute="leading" secondItem="5Lz-va-sEw" secondAttribute="leading" id="dd8-GS-7d8"/>
+                            <constraint firstItem="eRe-tu-E8l" firstAttribute="top" secondItem="UaA-KL-jD8" secondAttribute="bottom" constant="27" id="dvk-cr-PlX"/>
+                            <constraint firstItem="qfM-SS-C0S" firstAttribute="top" secondItem="KrT-UO-mef" secondAttribute="bottom" constant="27" id="fGG-ec-eJN"/>
+                            <constraint firstItem="KrT-UO-mef" firstAttribute="top" secondItem="hDr-MQ-9rQ" secondAttribute="bottom" constant="241" id="kfZ-rS-lXk"/>
+                            <constraint firstAttribute="trailing" secondItem="eRe-tu-E8l" secondAttribute="trailing" constant="69" id="zEa-au-aKG"/>
                         </constraints>
                     </view>
                 </viewController>
