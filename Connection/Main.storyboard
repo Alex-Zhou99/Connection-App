@@ -414,9 +414,12 @@ please click "Add" button on the top right to add students!</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Je2-5h-xV8">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Je2-5h-xV8">
                                 <rect key="frame" x="208" y="0.0" width="1" height="736"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="ahH-M9-nUm"/>
+                                </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Host Family" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KrT-UO-mef">
                                 <rect key="frame" x="60" y="288" width="98" height="37"/>
@@ -476,14 +479,17 @@ please click "Add" button on the top right to add students!</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="qfM-SS-C0S" firstAttribute="leading" secondItem="5Lz-va-sEw" secondAttribute="leading" constant="81" id="1WR-lq-g1U"/>
+                            <constraint firstItem="Je2-5h-xV8" firstAttribute="bottom" secondItem="5Lz-va-sEw" secondAttribute="bottomMargin" id="6kT-Xx-ACn"/>
                             <constraint firstItem="hDr-MQ-9rQ" firstAttribute="top" secondItem="5Lz-va-sEw" secondAttribute="top" id="D7t-fh-B1a"/>
                             <constraint firstItem="UaA-KL-jD8" firstAttribute="top" secondItem="Smv-Ob-VkZ" secondAttribute="bottom" constant="268" id="Mor-to-vqp"/>
                             <constraint firstItem="KrT-UO-mef" firstAttribute="leading" secondItem="5Lz-va-sEw" secondAttribute="leading" constant="60" id="NPE-Pm-3ak"/>
+                            <constraint firstItem="Je2-5h-xV8" firstAttribute="top" secondItem="5Lz-va-sEw" secondAttribute="topMargin" id="UA3-S0-2Zx"/>
                             <constraint firstAttribute="trailing" secondItem="UaA-KL-jD8" secondAttribute="trailing" constant="49" id="VMw-Q6-JJk"/>
                             <constraint firstItem="hDr-MQ-9rQ" firstAttribute="leading" secondItem="5Lz-va-sEw" secondAttribute="leading" id="dd8-GS-7d8"/>
                             <constraint firstItem="eRe-tu-E8l" firstAttribute="top" secondItem="UaA-KL-jD8" secondAttribute="bottom" constant="27" id="dvk-cr-PlX"/>
                             <constraint firstItem="qfM-SS-C0S" firstAttribute="top" secondItem="KrT-UO-mef" secondAttribute="bottom" constant="27" id="fGG-ec-eJN"/>
                             <constraint firstItem="KrT-UO-mef" firstAttribute="top" secondItem="hDr-MQ-9rQ" secondAttribute="bottom" constant="241" id="kfZ-rS-lXk"/>
+                            <constraint firstItem="Je2-5h-xV8" firstAttribute="centerX" secondItem="5Lz-va-sEw" secondAttribute="centerX" constant="1.5" id="tHR-GS-RAf"/>
                             <constraint firstAttribute="trailing" secondItem="eRe-tu-E8l" secondAttribute="trailing" constant="69" id="zEa-au-aKG"/>
                         </constraints>
                     </view>
