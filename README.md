@@ -73,5 +73,5 @@ firebase database
 ![](https://github.com/shi-edward/Connection-App/blob/master/Project-Image/FphVJA_p3vHnWLEWZON8ZnJKZvpB.png)
 
 ##Discuss
-* submit: issue(https://github.com/shi-edward/Connection-App/issues)
+* [submit issue](https://github.com/shi-edward/Connection-App/issues)
 * email: edwardshi95@gmail.com
