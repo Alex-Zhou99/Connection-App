@@ -1,3 +1,4 @@
+![](https://github.com/shi-edward/Connection-App/blob/master/Project-Image/fads.png)
 #Host Family Connection
 
 An individual project: a application to link between host families and volunteers.Implemented two different users to register, login and view new students who are admitted by UTDallas. Students' information include name, major, email, arrival time, phone number, airport and flight. Host family users provide host family and volunteer users pick new student up on the airport based on arrival time.
